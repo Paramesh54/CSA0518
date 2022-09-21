@@ -1,0 +1,81 @@
+mysql> alter table student add primary key(RegNo);
+
++--------+----------+------+-----+---------+-------+
+| Field  | Type     | Null | Key | Default | Extra |
++--------+----------+------+-----+---------+-------+
+| Regno  | int(10)  | NO   | PRI | 0       |       |
+| name   | char(20) | YES  |     | NULL    |       |
+| gender | char(1)  | YES  |     | NULL    |       |
+| Dob    | int(10)  | YES  |     | NULL    |       |
+| city   | char(10) | YES  |     | NULL    |       |
++--------+----------+------+-----+---------+-------+
+5 rows in set (0.02 sec)
+
+
+
+
+mysql> alter table faculty add primary key(FacNO);
+
+mysql> desc faculty;
++---------+----------+------+-----+---------+-------+
+| Field   | Type     | Null | Key | Default | Extra |
++---------+----------+------+-----+---------+-------+
+| FacNo   | int(10)  | NO   | PRI | 0       |       |
+| FacName | char(20) | YES  |     | NULL    |       |
+| gender  | char(1)  | YES  |     | NULL    |       |
+| Dob     | int(10)  | YES  |     | NULL    |       |
+| Mobile  | int(10)  | YES  |     | NULL    |       |
+| Doj     | int(10)  | YES  |     | NULL    |       |
+| dept    | char(10) | YES  |     | NULL    |       |
++---------+----------+------+-----+---------+-------+
+7 rows in set (0.01 sec)
+
+mysql> alter table course add primary key(SemNo);
+
+mysql> desc course;
++------------+----------+------+-----+---------+-------+
+| Field      | Type     | Null | Key | Default | Extra |
++------------+----------+------+-----+---------+-------+
+| courseno   | int(10)  | YES  |     | NULL    |       |
+| coursedesc | char(20) | YES  |     | NULL    |       |
+| coursetype | char(1)  | YES  |     | NULL    |       |
+| semno      | int(10)  | NO   | PRI | 0       |       |
+| ballno     | int(10)  | YES  |     | NULL    |       |
+| facno      | int(10)  | YES  |     | NULL    |       |
++------------+----------+------+-----+---------+-------+
+6 rows in set (0.03 sec)
+
+mysql> alter table deparment add primarykey(depno);
+mysql> desc deparment;
++---------+----------+------+-----+---------+-------+
+| Field   | Type     | Null | Key | Default | Extra |
++---------+----------+------+-----+---------+-------+
+| DepNo   | int(10)  | YES  |     | NULL    |       |
+| DepName | char(20) | YES  |     | NULL    |       |
+| DepHead | char(20) | YES  |     | NULL    |       |
++---------+----------+------+-----+---------+-------+
+3 rows in set (0.04 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

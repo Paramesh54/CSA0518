@@ -1,0 +1,86 @@
+mysql> insert into student values(19211545,'vijay','m',2002,'kadapa');
+
+mysql> select*from student;
++----------+-------+--------+------+--------+
+| Regno    | name  | gender | Dob  | city   |
++----------+-------+--------+------+--------+
+| 19211545 | vijay | m      | 2002 | kadapa |
++----------+-------+--------+------+--------+
+1 row in set (0.00 sec)
+
+mysql> insert into student values(19211675,'mahi','m',2002,'kadapa');
+mysql> select *from student;
++----------+-------+--------+------+--------+
+| Regno    | name  | gender | Dob  | city   |
++----------+-------+--------+------+--------+
+| 19211545 | vijay | m      | 2002 | kadapa |
+| 19211675 | mahi  | m      | 2002 | kadapa |
++----------+-------+--------+------+--------+
+2 rows in set (0.00 sec)
+
+mysql> insert into student values(19211679,'mahitha','f',2002,'kadapa');
+
+mysql> select  *from student;
++----------+---------+--------+------+--------+
+| Regno    | name    | gender | Dob  | city   |
++----------+---------+--------+------+--------+
+| 19211545 | vijay   | m      | 2002 | kadapa |
+| 19211675 | mahi    | m      | 2002 | kadapa |
+| 19211679 | mahitha | f      | 2002 | kadapa |
++----------+---------+--------+------+--------+
+3 rows in set (0.00 sec)
+
+mysql> insert into facultys values(192111545,'vijay','m',2002,99634107,2020,'cse');
+mysql> select*from facultys;
++-----------+---------+--------+------+----------+------+------+
+| facno     | facname | gender | dob  | mobileno | doj  | dept |
++-----------+---------+--------+------+----------+------+------+
+| 192111545 | vijay   | m      | 2002 | 99634107 | 2020 | cse  |
++-----------+---------+--------+------+----------+------+------+
+1 row in set (0.00 sec)
+
+mysql> insert into facultys values(192111555,'mahitha','f',2002,99634188,2020,'cse');
+mysql> select *from facultys;
++-----------+---------+--------+------+----------+------+------+
+| facno     | facname | gender | dob  | mobileno | doj  | dept |
++-----------+---------+--------+------+----------+------+------+
+| 192111545 | vijay   | m      | 2002 | 99634107 | 2020 | cse  |
+| 192111555 | mahitha | f      | 2002 | 99634188 | 2020 | cse  |
++-----------+---------+--------+------+----------+------+------+
+2 rows in set (0.00 sec)
+
+mysql> insert into deparment values(192111545,'vijay','cse');
+mysql> select*from deparment;
++-----------+---------+---------+
+| DepNo     | DepName | DepHead |
++-----------+---------+---------+
+| 192111545 | vijay   | cse     |
++-----------+---------+---------+
+1 row in set (0.00 sec)
+
+mysql> insert into deparment values(192111545,'dilliu','cse');
+mysql> select *from deparment;
++-----------+---------+---------+
+| DepNo     | DepName | DepHead |
++-----------+---------+---------+
+| 192111545 | vijay   | cse     |
+| 192111545 | dillu   | cse     |
+| 192111545 | dilliu  | cse     |
++-----------+---------+---------+
+3 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
